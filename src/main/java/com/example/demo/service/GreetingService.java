@@ -48,6 +48,9 @@ public class GreetingService {
 
         return new Greeting(0, message);
     }
+    public Greeting save(Greeting greeting) {
+        return greetingRepository.save(greeting);
+    }
 
 
 
